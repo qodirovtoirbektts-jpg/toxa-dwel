@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dwel — Minimalist Architecture & Sustainable Living Spaces</title>
+  <meta name="description" content="Dwel crafts carbon-negative, architecturally pure modular living pavilions and prefabricated luxury residences integrated with untouched natural landscapes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Minimal Header -->
+  <header class="dwel-header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo" id="logo">
+        <span class="logo-mark">◫</span>
+        <span class="logo-name">DWEL</span>
+      </a>
+
+      <div class="header-geo">
+        <span>60°10'N 24°56'E</span>
+        <span class="geo-dot"></span>
+        <span>HELSINKI STUDIO</span>
+      </div>
+
+      <nav class="nav" id="nav">
+        <a href="#models" class="nav-link">Architectures</a>
+        <a href="#configurator" class="nav-link">Configurator</a>
+        <a href="#philosophy" class="nav-link">Materials</a>
+        <a href="#gallery" class="nav-link">Locations</a>
+        <a href="#contact" class="nav-link">Inquire</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#configurator" class="btn btn-outline">Build Your Dwel</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="dwel-hero" id="hero">
+      <div class="hero-backdrop">
+        <div class="hero-overlay"></div>
+        <div class="architectural-render">
+          <div class="house-silhouette">
+            <div class="roof-pitch"></div>
+            <div class="glass-facade">
+              <div class="glass-pane pane-1"></div>
+              <div class="glass-pane pane-2"></div>
+              <div class="glass-pane pane-3"></div>
+            </div>
+            <div class="cantilever-deck"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-meta">
+          <span class="tag-pill">ARCHITECTURAL MONOGRAPH № 04</span>
+          <span class="edition-date">SPRING 2026</span>
+        </div>
+        <h1 class="hero-heading">
+          Purity of Form. <br>
+          <span class="italic-serif">Sanctuary in Nature.</span>
+        </h1>
+        <p class="hero-desc">
+          Precision-engineered prefabricated pavilions engineered with cross-laminated Nordic pine, triple-pane structural thermal glass, and self-sustaining geothermal micro-grids.
+        </p>
+
+        <div class="hero-action-bar">
+          <a href="#models" class="btn btn-solid">Explore Lineup</a>
+          <button class="btn btn-ghost" id="openTourModalBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            Interactive Space Tour
+          </button>
+        </div>
+
+        <div class="hero-specs-row">
+          <div class="spec-cell">
+            <span class="spec-label">CARBON IMPACT</span>
+            <strong class="spec-value">-42 Tonnes</strong>
+            <small>Net Negative Life-Cycle</small>
+          </div>
+          <div class="spec-divider"></div>
+          <div class="spec-cell">
+            <span class="spec-label">FABRICATION SPEED</span>
+            <strong class="spec-value">12 Weeks</strong>
+            <small>Off-Site Precision CNC</small>
+          </div>
+          <div class="spec-divider"></div>
+          <div class="spec-cell">
+            <span class="spec-label">THERMAL EFFICIENCY</span>
+            <strong class="spec-value">R-60+</strong>
+            <small>Passive House Standard</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture Lineup -->
+    <section class="models-section" id="models">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="eyebrow">THE RESIDENCES</span>
+          <h2>Three Distinct Architectural Typologies</h2>
+          <p>Each model is conceived to seamlessly merge indoor contemplation with the surrounding landscape.</p>
+        </div>
+
+        <div class="models-grid">
+          <!-- Model 1 -->
+          <div class="model-card active" data-model="cabin">
+            <div class="model-visual">
+              <div class="model-badge">45 m² / 484 sq.ft</div>
+              <div class="model-graphic graphic-cabin">
+                <div class="model-box"></div>
+              </div>
+            </div>
+            <div class="model-info">
+              <span class="model-series">SERIES I</span>
+              <h3>The Forest Cabin</h3>
+              <p>Compact contemplative retreat featuring a panoramic glazed gable, integrated sauna, and concealed galley kitchen.</p>
+              <div class="model-details-row">
+                <span>Bedrooms: <strong>1</strong></span>
+                <span>Bathrooms: <strong>1</strong></span>
+                <span>Starting at: <strong>$145,000</strong></span>
+              </div>
+              <button class="btn btn-block btn-model-select" data-model-id="cabin">Configure Cabin</button>
+            </div>
+          </div>
+
+          <!-- Model 2 -->
+          <div class="model-card" data-model="pavilion">
+            <div class="model-visual">
+              <div class="model-badge">95 m² / 1,022 sq.ft</div>
+              <div class="model-graphic graphic-pavilion">
+                <div class="model-box"></div>
+              </div>
+            </div>
+            <div class="model-info">
+              <span class="model-series">SERIES II</span>
+              <h3>The Glass Pavilion</h3>
+              <p>Post-and-beam architectural masterpiece with 360° floor-to-ceiling glass walls and perimeter cantilevered larch deck.</p>
+              <div class="model-details-row">
+                <span>Bedrooms: <strong>2</strong></span>
+                <span>Bathrooms: <strong>2</strong></span>
+                <span>Starting at: <strong>$285,000</strong></span>
+              </div>
+              <button class="btn btn-block btn-model-select" data-model-id="pavilion">Configure Pavilion</button>
+            </div>
+          </div>
+
+          <!-- Model 3 -->
+          <div class="model-card" data-model="villa">
+            <div class="model-visual">
+              <div class="model-badge">190 m² / 2,045 sq.ft</div>
+              <div class="model-graphic graphic-villa">
+                <div class="model-box"></div>
+              </div>
+            </div>
+            <div class="model-info">
+              <span class="model-series">SERIES III</span>
+              <h3>The Nordic Villa</h3>
+              <p>Dual-wing family estate connected by a glass atrium, private guest quarters, open-fire hearth, and geothermal HVAC.</p>
+              <div class="model-details-row">
+                <span>Bedrooms: <strong>4</strong></span>
+                <span>Bathrooms: <strong>3.5</strong></span>
+                <span>Starting at: <strong>$490,000</strong></span>
+              </div>
+              <button class="btn btn-block btn-model-select" data-model-id="villa">Configure Villa</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Configurator -->
+    <section class="configurator-section" id="configurator">
+      <div class="container">
+        <div class="config-wrapper">
+          <div class="config-controls">
+            <span class="eyebrow">CUSTOM SPECIFICATION</span>
+            <h2>Build & Price Your Residence</h2>
+            <p>Customize structural materials, solar autonomy, and interior finishes with instant architectural cost calculation.</p>
+
+            <div class="config-group">
+              <label class="group-label">1. Architectural Model</label>
+              <div class="btn-group-segmented" id="modelSelectGroup">
+                <button class="btn-seg active" data-value="145000" data-name="Cabin (45m²)">Cabin (45m²)</button>
+                <button class="btn-seg" data-value="285000" data-name="Pavilion (95m²)">Pavilion (95m²)</button>
+                <button class="btn-seg" data-value="490000" data-name="Villa (190m²)">Villa (190m²)</button>
+              </div>
+            </div>
+
+            <div class="config-group">
+              <label class="group-label">2. Exterior Cladding</label>
+              <div class="btn-group-segmented" id="claddingGroup">
+                <button class="btn-seg active" data-value="0" data-name="Charred Shou Sugi Ban">Shou Sugi Ban ($0)</button>
+                <button class="btn-seg" data-value="12000" data-name="Natural Siberian Larch">Siberian Larch (+$12k)</button>
+                <button class="btn-seg" data-value="18000" data-name="Dark Matte Zinc Plates">Zinc Panels (+$18k)</button>
+              </div>
+            </div>
+
+            <div class="config-group">
+              <label class="group-label">3. Energy & Off-Grid Autonomy</label>
+              <div class="btn-group-segmented" id="energyGroup">
+                <button class="btn-seg active" data-value="0" data-name="Grid Ready Standard">Standard ($0)</button>
+                <button class="btn-seg" data-value="24000" data-name="Solar Roof + Tesla Powerwall">Off-Grid Solar (+$24k)</button>
+                <button class="btn-seg" data-value="38000" data-name="Full Geothermal + Rain Harvesting">Net-Zero Autonomous (+$38k)</button>
+              </div>
+            </div>
+
+            <div class="config-group">
+              <label class="group-label">4. Interior Finishes</label>
+              <div class="btn-group-segmented" id="finishGroup">
+                <button class="btn-seg active" data-value="0" data-name="Nordic Birch Plywood">Birch Plywood ($0)</button>
+                <button class="btn-seg" data-value="15000" data-name="Smoked White Oak & Travertine">Smoked Oak (+$15k)</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="config-summary-panel">
+            <div class="summary-card">
+              <span class="summary-badge">ESTIMATED INVESTMENT</span>
+              <div class="total-price-display" id="totalPriceDisplay">$145,000</div>
+              <span class="delivery-time">Estimated Site Delivery: <strong>14 Weeks</strong></span>
+
+              <div class="summary-breakdown" id="summaryBreakdown">
+                <div class="breakdown-row">
+                  <span>Base Model:</span>
+                  <strong id="summaryModel">Cabin (45m²)</strong>
+                </div>
+                <div class="breakdown-row">
+                  <span>Cladding:</span>
+                  <strong id="summaryCladding">Charred Shou Sugi Ban</strong>
+                </div>
+                <div class="breakdown-row">
+                  <span>Autonomy:</span>
+                  <strong id="summaryEnergy">Grid Ready Standard</strong>
+                </div>
+                <div class="breakdown-row">
+                  <span>Interior:</span>
+                  <strong id="summaryFinish">Nordic Birch Plywood</strong>
+                </div>
+              </div>
+
+              <div class="summary-actions">
+                <button class="btn btn-solid btn-block" id="reserveBuildBtn">Reserve Fabrication Slot</button>
+                <button class="btn btn-outline btn-block" id="downloadSpecBtn">Download Architectural PDF</button>
+              </div>
+
+              <small class="guarantee-note">🔒 Includes structural engineering stamps & 30-year warranty</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Material Philosophy -->
+    <section class="philosophy-section" id="philosophy">
+      <div class="container">
+        <div class="philosophy-grid">
+          <div class="phil-image-box">
+            <div class="material-swatch-card">
+              <div class="swatch-layer layer-timber"></div>
+              <div class="swatch-layer layer-stone"></div>
+              <div class="swatch-caption">Cross-Laminated Timber (CLT) & Honed Gotland Limestone</div>
+            </div>
+          </div>
+          <div class="phil-text-box">
+            <span class="eyebrow">CIRCULAR REGENERATION</span>
+            <h2>Materials with a Soul & Zero Environmental Debt</h2>
+            <p>Every wooden element in a Dwel home is harvested from certified sustainably managed Nordic forests, sequestering more atmospheric carbon than is emitted during fabrication and transport.</p>
+            <div class="phil-pillars">
+              <div class="pillar">
+                <h4>01. Precision Off-Site Prefabrication</h4>
+                <p>Constructed inside climate-controlled robotics facilities with millimetric accuracy, eliminating weather delays and construction waste.</p>
+              </div>
+              <div class="pillar">
+                <h4>02. Monolithic Glazing Walls</h4>
+                <p>Low-iron acoustic triple glass coated with microscopic metal oxide films to reflect radiant interior heat while welcoming warm winter sunlight.</p>
+              </div>
+              <div class="pillar">
+                <h4>03. Minimal Ground Footprint</h4>
+                <p>Ground screw foundations eliminate destructive concrete pouring, leaving native trees, moss and root ecosystems undisturbed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Installations Gallery -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-title-wrap text-center">
+          <span class="eyebrow">FIELD ARCHIVE</span>
+          <h2>Installations Across Extreme Landscapes</h2>
+        </div>
+
+        <div class="locations-strip">
+          <div class="loc-card">
+            <div class="loc-header">
+              <span class="loc-coord">64°08'N 21°56'W</span>
+              <h4>Thingvellir Valley, Iceland</h4>
+            </div>
+            <p>Glass Pavilion 95m² facing geothermal hot springs and midnight aurora skies.</p>
+          </div>
+          <div class="loc-card">
+            <div class="loc-header">
+              <span class="loc-coord">46°30'N 8°00'E</span>
+              <h4>Grindelwald, Switzerland</h4>
+            </div>
+            <p>Nordic Villa 190m² anchored on steep granite alp cliffs with panoramic Eiger views.</p>
+          </div>
+          <div class="loc-card">
+            <div class="loc-header">
+              <span class="loc-coord">42°50'N 140°41'E</span>
+              <h4>Niseko, Hokkaido, Japan</h4>
+            </div>
+            <p>Cabin 45m² clad in cedar slats designed for heavy alpine snow loads and private onsen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation Inquire -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <span class="eyebrow">COMMENCE YOUR PROJECT</span>
+          <h2>Schedule an Architectural Feasibility Review</h2>
+          <p>Share your land coordinates or site requirements. Our lead architects will prepare a 3D topographic orientation and zoning analysis within 48 hours.</p>
+
+          <form class="inquire-form" id="inquireForm">
+            <div class="form-row">
+              <input type="text" placeholder="Full Name" required id="inqName">
+              <input type="email" placeholder="Email Address" required id="inqEmail">
+            </div>
+            <div class="form-row">
+              <input type="text" placeholder="Land Location or GPS Coordinates" required id="inqLocation">
+              <select id="inqTimeline">
+                <option value="immediate">Target Construction: Within 6 Months</option>
+                <option value="year">Target Construction: 6 - 12 Months</option>
+                <option value="planning">Future Planning: 2027+</option>
+              </select>
+            </div>
+            <textarea placeholder="Describe your site topography and architectural vision..." rows="3" id="inqNotes"></textarea>
+            <button type="submit" class="btn btn-solid btn-lg">Submit Feasibility Inquiry</button>
+          </form>
+          <div class="inquire-success" id="inquireSuccess"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Space Tour Modal -->
+  <div class="modal-backdrop" id="tourModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3>Spatial 3D Tour — Pavilion Series II</h3>
+        <button class="modal-close" id="closeTourBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="floor-plan-viewer">
+          <div class="plan-tabs">
+            <button class="plan-tab active" data-floor="ground">Ground Level Floor Plan</button>
+            <button class="plan-tab" data-floor="terrace">Upper Roof Sun Terrace</button>
+          </div>
+          <div class="plan-schematic" id="planSchematic">
+            <div class="room room-living">Living Pavilion & Hearth (42m²)</div>
+            <div class="room room-master">Master Sanctuary (26m²)</div>
+            <div class="room room-sauna">Sauna & Cold Plunge (12m²)</div>
+            <div class="room room-deck">Cantilevered Larch Deck (38m²)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="dwel-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="logo">
+          <span class="logo-mark">◫</span>
+          <span class="logo-name">DWEL</span>
+        </div>
+        <p>Architectural studio dedicated to carbon-negative living structures, modernism, and quiet Nordic minimalism.</p>
+        <p class="copyright">&copy; 2026 Dwel Architecture Ltd. All rights reserved. Curated for <strong>Toxa</strong>.</p>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-group">
+          <strong>STUDIOS</strong>
+          <span>Helsinki: Aleksanterinkatu 14</span>
+          <span>Zurich: Dufourstrasse 43</span>
+          <span>Tokyo: Minato City, Aoyama</span>
+        </div>
+        <div class="footer-group">
+          <strong>CONTACT</strong>
+          <span>hello@dwel-living.com</span>
+          <span>+358 9 424 9900</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
